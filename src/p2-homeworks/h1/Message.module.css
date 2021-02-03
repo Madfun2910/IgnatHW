@@ -1,0 +1,51 @@
+.message {
+    display: grid;
+    grid-template:
+    "avatar mContainer";
+    width: 430px;
+    height: auto;
+    margin-left: 100px;
+    align-items: end;
+
+}
+.message img {
+    width: 75px;
+    height: 75px;
+}
+.avatar {
+    grid-area: avatar;
+}
+.mContainer {
+    display: grid;
+    grid-area: mContainer;
+    grid-template-areas:
+    "name name"
+    "messageText time";
+    grid-template-columns: 1fr 50px;
+    align-items: end;
+    border: 2px solid green;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    padding-left: 15px;
+    background: #1cff61;
+}
+.name {
+    grid-area: name;
+    font-weight: bold;
+}
+.messageText {
+    grid-area: messageText;
+    width: auto;
+    overflow: hidden;
+    padding-top: 10px;
+
+}
+.time {
+    grid-area: time;
+    overflow: hidden;
+    padding-right: -50px;
+    font-weight: bold;
+}
+
+
