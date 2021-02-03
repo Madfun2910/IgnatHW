@@ -1,0 +1,17 @@
+.likeLink {
+    background: none;
+    color: #3387c4;
+    border: none;
+    padding: 0;
+    font: inherit;
+    margin-left: 5px;
+}
+
+.likeLink:hover {
+    background: none;
+    color: #25618c;
+    border: none;
+    padding: 0;
+    font: inherit;
+    text-decoration: underline;
+}
